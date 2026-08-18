@@ -1,0 +1,115 @@
+:root {
+ --background: #0b0f19;
+ --maincolor: #f8fafc;
+ --cardbackground: #131b2e;
+ --secondarycolor: #94a3b8;
+ --elevatedcolor: #1e293b;
+ --accentcolor: #22d3ee;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--maincolor);
+    font-family: "Inter", sans-serif;
+}
+
+.profile-info img{
+ width: 90px;
+ height: 90px;
+ border-radius: 50%;
+ object-fit: cover;
+}
+
+.profile-info{
+ display:flex ;
+ align-items: center;
+ gap: 1rem;
+ width: 100%;
+ justify-content: center;
+}
+
+.profile-info h1, .profile-info p{
+ margin: 0;
+}
+.profile-info h1{
+ font-size: 1.5rem;
+ font-weight: 700;
+}
+
+.profile-info span{
+ color: var(--secondarycolor);
+}
+
+.profile-stats{
+ display: flex;
+ justify-content: center;
+ gap: 5rem;
+ margin-top: 1.5rem;
+ width: 100%;
+}
+
+.profile-stats div{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+header {
+ max-width: 700px;
+ margin: 2rem auto;
+ padding: 1rem;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.profile-tabs {
+ display: flex;
+ justify-content: center;
+ gap: 2rem;
+ border-bottom: 1px solid var(--elevatedcolor);
+ margin-top: 2rem;
+}
+
+.profile-tabs button {
+ background-color: transparent;
+ color: var(--secondarycolor);
+ border: none;
+ padding: 0.8rem 0.5rem;
+ cursor: pointer;
+ font-family: "Inter", sans-serif;
+ transition: 0.2s;
+}
+
+.profile-tabs button:hover {
+ color: var(--maincolor);
+}
+
+.profile-tabs button:first-child {
+ color: var(--maincolor);
+ border-bottom: 2px solid var(--accentcolor);
+}
+
+.profile-grid{
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 0.5rem;
+}
+
+.profile-post{
+ aspect-ratio: 9/16;
+ overflow: hidden;
+
+}
+
+.profile-post img{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+
+.profile-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+

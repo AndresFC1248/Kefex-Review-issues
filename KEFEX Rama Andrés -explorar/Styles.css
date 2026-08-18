@@ -1,0 +1,263 @@
+:root{
+ --background:#0b0f19;
+ --maincolor: #f8fafc;
+ --cardbackground:#131b2e;
+ --secondarycolor: #94a3b8;
+ --elevatedcolor: #1e293b;
+ --accentcolor: #22d3ee;
+}
+
+.light-mode{
+ --background: #f8fafc;
+ --maincolor: #0f172a;
+ --cardbackground: #ffffff;
+ --secondarycolor: #64748b;
+ --elevatedcolor: #e2e8f0;
+}
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background);
+    color: var(--maincolor);
+    font-family: "inter",sans-serif;
+    padding: 0;
+}
+
+.post{
+ background-color: var(--cardbackground);
+ padding: 1rem ;
+ margin: 0 auto 1.5rem;
+ border-radius:  16px;
+ max-width: 650px;
+ display: flex;
+ flex-direction: column;
+ gap: 1rem;
+}
+
+.post video{
+    width: 50%;
+    border-radius: 10px;
+    object-fit: contain;
+    aspect-ratio: 9/16;
+    align-self: center;
+}
+
+.author-information{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.author-information img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.user-info h3, .user-info p{
+    margin: 0;
+}
+
+.user-info p{
+ font-size: 0.85rem;
+ color: var(--secondarycolor);
+}
+
+.user-info h3{
+ font-weight: 600;
+}
+
+.caption{
+ display: flex;
+ flex-direction: column;
+ gap: 0.75rem;
+}
+
+.e-commerce{
+    background-color: var(--elevatedcolor) ;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.e-commerce button{
+ background-color: var(--accentcolor);
+ border: none;
+ border-radius: 8px;
+ padding: 0.6rem 1rem;
+ cursor: pointer;
+ color: var(--background);
+ transition: 0.2s;
+}
+
+.e-commerce button:hover{
+    opacity: 0.9;
+}
+
+.post-interactions{
+ display: flex;
+ gap: 1rem;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.inter-item{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+}
+
+.inter-item button{
+ background-color: transparent;
+ border: none;
+ color: var(--maincolor);
+ cursor: pointer;
+ border-radius: 8px;
+ padding: 0.4rem 0.5rem;
+ transition: 0.2s;
+}
+
+.inter-item button:hover{
+ background-color: var(--elevatedcolor);
+}
+
+.sponsored-label{
+    width: fit-content;
+    background-color: var(--elevatedcolor);
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    color: var(--secondarycolor);
+}
+
+#buscador {
+    max-width: 650px;
+    margin: 0 auto 1.5rem;
+}
+
+#buscador h2 {
+    margin-bottom: 0.75rem;
+}
+
+#buscador input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    background-color: var(--cardbackground);
+    color: var(--maincolor);
+    border: none;
+    border-radius: 10px;
+    font-family: "Inter", sans-serif;
+}
+
+#categorias {
+    max-width: 650px;
+    margin: 0 auto 1.5rem;
+}
+
+#categorias h2 {
+    margin-bottom: 0.75rem;
+}
+
+#categorias button {
+    background-color: var(--cardbackground);
+    color: var(--maincolor);
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    margin-right: 0.5rem;
+    transition: 0.2s;
+}
+
+#categorias button:hover {
+    background-color: var(--elevatedcolor);
+}
+
+.category-buttons {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+header {
+    max-width: 650px;
+    margin: 2rem auto 1.5rem;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: var(--secondarycolor);
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+#buscador h2, #categorias h2, #feed h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+#feed {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.theme-toggle {
+    background-color: var(--cardbackground);
+    color: var(--maincolor);
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    transition: 0.2s;
+}
+
+.theme-toggle:hover {
+    background-color: var(--elevatedcolor);
+}
+
+.comment-box {
+    width: 100%;
+}
+
+.comment-box textarea {
+    width: 100%;
+    min-height: 80px;
+    margin-top: 0.75rem;
+    padding: 0.75rem;
+    background-color: var(--elevatedcolor);
+    color: var(--maincolor);
+    border: none;
+    border-radius: 10px;
+    font-family: "Inter", sans-serif;
+    resize: vertical;
+}
+
+.publish-comment {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--accentcolor);
+    color: var(--background);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
